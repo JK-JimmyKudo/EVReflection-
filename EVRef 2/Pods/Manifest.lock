@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.4.0)
+  - EVReflection (4.7.0):
+    - EVReflection/Core (= 4.7.0)
+  - EVReflection/Core (4.7.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - EVReflection
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  EVReflection: c874815c248c69e4712ee48780d548c762840d9c
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 3959530118dcc85d0137013b6cd64518094723d9
+
+COCOAPODS: 1.2.1.beta.1
