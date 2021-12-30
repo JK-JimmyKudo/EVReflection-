@@ -5,24 +5,35 @@ Alamofire + EVReflection + SwiftyJSON:一步解决JSON解析
 
 创建项目,第三方库导入
 
-pod 'EVReflection' 
+pod 'EVReflection'
+
 pod 'Alamofire'
 
 首先使用Alamofire封装网络请求类,现在只是封装了一个get网络请求，后续再更新
+
 创建一个网络请求封装类ZYNetwork,导入头文件
+
 import Alamofire
+
 import Foundation
+
 import SystemConfiguration
+
 import Alamofire
+
 import EVReflection
+
 import SwiftyJSON
+
 
 func PPrequest<T: NSObject>(type:RequestType ,URLString:String, Parameter:[String:AnyObject], block: @escaping (T?, NSError?) -> Void) where T: EVReflectable {
 
 switch type {
+
 case .requestTypeGet:
 
 Alamofire.request(URLString, method: .get, parameters: Parameter as [String : Any])
+
 .responseJSON { (response) in/*这里使用了闭包*/
 
 //获取结果,获取结果,对结果进行解析,将response.data转换为String类型,在使用SwiftyJSON将结果转换为JSON,最后将JSON数据进行转换成EVObject类型,T是泛型,遵循EVReflectable 协议.最后将结果通过Block返回到主界面
