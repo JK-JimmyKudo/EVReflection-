@@ -1,9 +1,12 @@
 # EVReflection-
 EVReflection转模型
 Alamofire + EVReflection + SwiftyJSON:一步解决JSON解析
-\n
+
+
 创建项目,第三方库导入
-pod 'EVReflection' \n
+
+pod 'EVReflection' 
+
 pod 'Alamofire'
 
 首先使用Alamofire封装网络请求类,现在只是封装了一个get网络请求，后续再更新
